@@ -166,8 +166,8 @@ flowchart TD
 - 위와같이 정적인 조회용 공유 데이터 베이스는 상관이 없겠지만 아래와 같이 상태가 변경되는 경우는 정말 관리하기가 어려워진다.
 ```mermaid
 flowchart TD
-	주문 --주문접수(placed)--> orders
-	창고 --집품(picking),발송 완료(shipped)--> orders 
+	주문 --"주문접수(placed)"--> orders
+	창고 --"집품(picking),발송 완료(shipped)"--> orders 
 	orders[(주문테이블)]
 ```
 - 위와 같은 구조로 사용했을 때 창고의 호환성을 깨트리고 주문의 상태관리를 관리하기 매우 어렵다.
